@@ -13,8 +13,8 @@
 |Interpreted|Compiler|
 | :-------------------------------------------------------- | :---------------------------------------------------------- |
 |Interpreter converts high level language into intermediate language|Compiler's job is to convert code written in programming language into machine code (0s and 1s format)|
-|![](Imagers/Interperter.jpg)|![](Imagers/Compiler.jpg)|
-- ![Compiler](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-1.png)
+|||
+- ![Compiler](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-1.png)/
 Compiler
-- ![Interpreted](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-2.png)
+- ![Interpreted](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-2.png)\
 Interpreted
