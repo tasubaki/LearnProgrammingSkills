@@ -2,7 +2,7 @@
 ***
 # Python intro
 
-## What can Python do?
+###  What can Python do?
 - Create web applications.
 - Alongside software to create workflows.
 - Connect to database system.
