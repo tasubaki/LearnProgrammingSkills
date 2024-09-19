@@ -45,4 +45,83 @@ thisDict["year"] = 2018 # Result: {'brand': 'Ford', 'model': 'Mustang', 'year': 
 thisDict.update({"year": 2020}) # Result: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
 
 
-print(thisDict)
+# Adding Items
+thisDict["color"] = "red"
+
+
+# Removing Items
+thisDict.pop("model") #Result: {'brand': 'Ford', 'year': 2020, 'color': 'red'}
+thisDict.popitem() # Result: {'brand': 'Ford', 'year': 2020}. Remove last item
+#del thisDict["model"] # Delete specified item
+#thisDict.clear() # Result: {}
+
+# Loop
+for x in thisDict:
+    print(x)           # Result: brand year
+    print(thisDict[x]) # Result: Ford 2020
+
+for x in thisDict.values():
+    print(x) # Result: Ford 2020
+
+for x, y in thisDict.items():
+    print(x, y)
+"""
+Result:
+brand Ford
+year 2020
+"""
+
+
+# Copy a Dictionary
+dictCopy = thisDict.copy()
+dictCopy = dict(thisDict)
+
+
+# Nested Dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+
+# Add Nested Dictionaries
+nestedDict = {
+    "thisDict" : thisDict,
+    "thisDict1" : thisDict1,
+    "thisDict2" : thisDict2
+}
+
+
+# Access Items in Nested Dictionaries
+print(nestedDict["thisDict"]["brand"]) # Result: Ford
+
+
+# Loop Through Nested Dictionaries
+for x, obj in nestedDict.items():
+    print(x)
+
+    for y in obj:
+        print(y + ':', obj[y])
+"""
+Result:
+    thisDict
+    brand: Ford
+    year: 2020
+    thisDict1
+    name: John
+    age: 36
+    country: Norway
+    thisDict2
+    year: 2000
+"""
+
