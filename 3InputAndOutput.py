@@ -2,6 +2,9 @@
 name = input("Enter: ")  
 print("Hello " + name)
 
+number1, number2 = input("Enter 2 numbers separated by spaces: ").split()
+
+print(f"Number1 = {number1}, number2 = {number2}")
 
 def input_name(name):
     print("Hello", name)
@@ -9,6 +12,7 @@ def input_name(name):
 name1 = input("Enter: ")
 
 input_name(name1)
+
 
 # Output printing methods
 def input_name(name,age):
