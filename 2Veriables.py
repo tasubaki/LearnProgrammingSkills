@@ -39,9 +39,23 @@ x = "awesome" # Global variables
 
 def myfunc():
   x = "fantastic" # Local variables
-  print("Python is " + x) # Result fantastic
+  print("Python is " + x) # Result: fantastic
 
 myfunc()
 
-print("Python is " + x) # Result awesome
+print("Python is " + x) # Result: awesome
 
+
+# Check string
+txt = "The best things in life are free!"
+
+print("free" in txt) # Result: True
+print("expensive" not in txt) # Result: True
+
+
+# Slicing Strings
+text = "Hello, World!"
+
+print(text[2:5]) # Result: llo
+print(text[5]) # Result: ,
+print(text[-5:-2]) # Result: orl
