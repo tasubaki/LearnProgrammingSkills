@@ -8,7 +8,7 @@
 - Connect to database system.
 - handle big data and perform complex mathematics.
 ### Python Quickstart
-- Python is an interpreted programming language.pdate
+- Python is an interpreted programming language.
 
 |Interpreted|Compiler|
 | :-------------------------------------------------------- | :---------------------------------------------------------- |
