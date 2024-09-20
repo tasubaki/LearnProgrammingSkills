@@ -21,7 +21,7 @@
 
 ### Folder format
 - The format includes 2 folders "Theory" and "Training" to save theory and related exercises.
-- Theory \\
+- Theory\\
 [Python Get Started](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/1GetStart.py)  
 [Python Variables](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/2Veriables.py)  
 [Input Output in Python](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/3InputAndOutput.py)  
@@ -33,7 +33,7 @@
 [Python While Loops](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/9WhileLoop.py)  
 [Python For Loops](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/10ForLoop.py)  
  
-- Training \\
+- Training\\
 [Input Output Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/Average.py)  
 [If...Else Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/CheckLeapYear.py)  
 [While Loop Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/SearchItems.py)  
