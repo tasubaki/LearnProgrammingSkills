@@ -37,6 +37,6 @@
 - Training  
 [Input Output Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/Average.py)  
 [If...Else Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/CheckLeapYear.py)  
-[While Loop Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/SearchItems.py) 
+[While Loop Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/SearchItems.py)  
 [For Loop Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/ForLoopExercise.py)  
 
