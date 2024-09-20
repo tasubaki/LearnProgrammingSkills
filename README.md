@@ -14,7 +14,13 @@
 | :-------------------------------------------------------- | :---------------------------------------------------------- |
 |Interpreter converts high level language into intermediate language|Compiler's job is to convert code written in programming language into machine code (0s and 1s format)|
 |||
+- Compiler vs Interpreted
 - ![Compiler](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-1.png)/
-Compiler
+
 - ![Interpreted](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-2.png)\
-Interpreted
+
+### Folder format
+- The format includes 2 folders "Theory" and "Training" to save theory and related exercises.
+- Theory \n
+![Python Get Started](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/1GetStart.py) \n
+![Python Variables](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/2Veriables.py)
