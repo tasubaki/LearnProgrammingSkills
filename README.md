@@ -33,6 +33,7 @@
 [Python If...Else](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/8IfElse.py)  
 [Python While Loops](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/9WhileLoop.py)  
 [Python For Loops](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/10ForLoop.py)  
+[Python Functions](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Theory/11Function.py)  
  
 - Training  
 [Input Output Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Training/Average.py)  
