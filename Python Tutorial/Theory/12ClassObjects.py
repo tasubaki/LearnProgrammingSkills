@@ -36,6 +36,26 @@ class Phone(Item):
         super().__init__(name, price, quantity)
         self.type_phone = type_phone
 
+
+# Encapsulation Topic
+class Bank():
+    def __init__(self, name: str, id_card: int) -> None:
+        self.name = name
+        self.id_card = id_card
+
+class Staff(Bank):
+    def __init__(self, name: str, id_card: int) -> None:
+        super().__init__(name, id_card)
+        #self.salary = 5000  # Public type
+        self.__salary = 5000  # Private type
+
+    # Admin change salary
+    def get_salary(self):
+        return self.__salary
+    
+    def set_salary(self, new_salary):
+        self.__salary = new_salary
+
 def main():
     item1 = Item("Phone", 1000, 3)
     item2 = Item("Pot", 100, 30)
@@ -72,6 +92,29 @@ def main():
     print(f"{phone1.name} has price {phone1.price}.")
     print(f"{phone2.name} is {phone2.type_phone} type phone.")
 
+
+    # Encapsulation Topic
+    staff1 = Staff("Nam",13245645)
+    staff2 = Staff("Chung", 9876543)
+
+    """ staff2.salary = 100000      # Result: 100000
     
+    print(staff2.salary)
+    print(dir(staff2))
+Result:
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
+'__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'id_card', 'name', 'salary']
+
+    """    
+    print(dir(staff1))
+    """
+    Result:
+    ['_Staff__salary', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
+    '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'id_card', 'name']
+    """
+    
+    staff2.set_salary(1000000000000)
+    print(f"{staff2.name} new salary is {staff2.get_salary()}")
+
 if __name__ == '__main__':
     main()
