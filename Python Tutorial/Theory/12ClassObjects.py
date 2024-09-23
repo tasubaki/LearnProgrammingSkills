@@ -56,6 +56,31 @@ class Staff(Bank):
     def set_salary(self, new_salary):
         self.__salary = new_salary
 
+
+# Polymorphism topic
+class ForeignStudents():
+    def __init__(self, name, id, contry) -> None:
+        self.name = name
+        self.id = id
+        self.contry = contry
+
+    def hello(self):
+        print("Hello")
+
+class VietStudents():
+    def __init__(self, name, id, contry) -> None:
+        self.name = name
+        self.id = id
+        self.contry = contry
+
+    def hello(self):
+        print("Chào")
+
+# Use generic functions to apply polymorphic 
+def hello_common(ForeignStudents):
+    ForeignStudents.hello()
+
+
 def main():
     item1 = Item("Phone", 1000, 3)
     item2 = Item("Pot", 100, 30)
@@ -112,9 +137,22 @@ Result:
     ['_Staff__salary', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
     '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'id_card', 'name']
     """
-    
     staff2.set_salary(1000000000000)
     print(f"{staff2.name} new salary is {staff2.get_salary()}")
+
+
+    # Polymorphism topic
+    student1 = ForeignStudents("Jack", 123456, "UK")
+    student2 = VietStudents("Hoa", 123456, "Việt Nam")
+
+    # Normally will point to the method of each class
+    student1.hello()    # Result: Hello
+    student2.hello()    # Result: Chào
+
+    # After applying polymorphism
+    hello_common(student1)  # Result: Hello
+    hello_common(student2)  # Result: Chào
+
 
 if __name__ == '__main__':
     main()
