@@ -30,6 +30,11 @@ class Item():
         else:
             return "Expensive"
 
+#instantiate the class "Phone" as a child class with the parent class "Item".
+class Phone(Item):
+    def __init__(self, name: str, price: float, quantity=0, type_phone="4G") -> None:
+        super().__init__(name, price, quantity)
+        self.type_phone = type_phone
 
 def main():
     item1 = Item("Phone", 1000, 3)
@@ -51,13 +56,22 @@ def main():
     del item2
 
     # Static
-    item3 = Item("Glove","10000",2) # After assigning this line style will error
+    #item3 = Item("Glove","10000",2) # After assigning this line style will error
     
     print(item1.check_price(1000))
     print(Item.check_price(100))
 
-    print(item3.sum_price())    # Result: 1000010000. 
+    #print(item3.sum_price())    # Result: 1000010000. 
     # Means the string is printed twice so we need to assign the data type to correct the problem.
+
+
+    # Inheritance topic
+    phone1 = Phone("Samsung note 20", 18000, 8, "5G")
+    phone2 = Phone("Samsung note 22", 18000, 4)
+
+    print(f"{phone1.name} has price {phone1.price}.")
+    print(f"{phone2.name} is {phone2.type_phone} type phone.")
+
     
 if __name__ == '__main__':
     main()
