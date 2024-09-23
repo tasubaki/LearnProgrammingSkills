@@ -24,8 +24,8 @@
 - The format includes 2 folders "Theory" and "Training" to save theory and related exercises.
 - Python Tutorial  
     - Theory  
-&nbsp;&nbsp;&nbsp;&nbsp;[Python Get Started](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python Tutorial/Theory/1GetStart.py)  
-[Python Variables](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python Tutorial/Theory/2Veriables.py)  
+&nbsp;&nbsp;&nbsp;&nbsp;[Python Get Started](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python%20Tutorial/Theory/1GetStart.py)  
+        [Python Variables](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python%20Tutorial/Theory/2Veriables.py)  
 [Input Output in Python](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python Tutorial/Theory/3InputAndOutput.py)  
 [Python Lists](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python Tutorial/Theory/4List.py)  
 [Python Tuples](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/Python Tutorial/Theory/5Tuple.py)  
