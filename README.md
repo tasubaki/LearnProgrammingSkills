@@ -46,6 +46,6 @@
 
 - File Handling  
     - Theory  
-        [Python Class/Objects](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Theory/12ClassObjects.py)  
+        [Python File Handling](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Theory/1File.py)  
 
     - Training  
