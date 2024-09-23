@@ -1,8 +1,12 @@
 class Item():
-    def __init__(self, name, price, quantity) -> None:
+    def __init__(self, name: str, price: float, quantity = 0) -> None:
         self.name = name
         self.price = price
         self.quantity = quantity
+
+        # Assign the data type section
+        assert price>=0
+        assert quantity>=0
 
     # The string representation of an object WITH the __str__() function:
     def __str__(self) -> str:       
@@ -14,6 +18,17 @@ class Item():
     # Using "pass"
     def change(self):
         pass
+
+    def sum_price(self):
+        return self.price * self.quantity
+
+    # Static method
+    @staticmethod
+    def check_price(prices):
+        if prices<=500:
+            return "Cheap"
+        else:
+            return "Expensive"
 
 
 def main():
@@ -35,6 +50,14 @@ def main():
     del item2.quantity
     del item2
 
+    # Static
+    item3 = Item("Glove","10000",2) # After assigning this line style will error
+    
+    print(item1.check_price(1000))
+    print(Item.check_price(100))
 
+    print(item3.sum_price())    # Result: 1000010000. 
+    # Means the string is printed twice so we need to assign the data type to correct the problem.
+    
 if __name__ == '__main__':
     main()
