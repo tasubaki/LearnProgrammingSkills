@@ -20,6 +20,9 @@
 
 ![Interpreted](https://st.quantrimang.com/photos/image/2023/07/13/so-sanh-compiler-va-interpreter-2.png)  
 
+- In Python, many functions are built-in functions. This means that they do not belong to a specific library but are part of the Python Standard Library and can be used directly without having to import any libraries.  
+[See details of built-in functions here](https://docs.python.org/3/library/functions.html)
+
 ### Folder format
 - The format includes 2 folders "Theory" and "Training" to save theory and related exercises.
 - Python Tutorial  
