@@ -49,3 +49,4 @@
         [Python File Handling](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Theory/1File.py)  
 
     - Training  
+        [Sum Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Training/FileExercise.py)  
