@@ -53,3 +53,5 @@
 
     - Training  
         [Sum Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Training/FileExercise.py)  
+        [Sorting Algorithms Exercises](https://github.com/tasubaki/LearnProgrammingSkills/blob/main/File%20Handling/Training/SortingAlgorithms.py)  
+
