@@ -49,12 +49,30 @@ class SortingAlgorithms:
         return array
     
     @staticmethod
+    def insertion_sort(array):
+        for i in range(1, len(array)):
+            insert_index = i
+            current_value = array[i]
+
+            for j in range(i-1, -1, -1):
+                if array[j] > current_value:
+                    array[j+1] = array[j]
+
+                    insert_index = j
+                else:
+                    break
+
+            array[insert_index] = current_value
+
+        return array
+
+    @staticmethod
     def partition(array, low, high):
-        pilot = array[high]
+        pivot = array[high]
         i = low -1
 
         for j in range(low, high):
-            if array[j] <= pilot:
+            if array[j] <= pivot:
                 i += 1
                 array[i], array[j] = array[j], array[i]
 
@@ -62,7 +80,18 @@ class SortingAlgorithms:
 
         return i+1
 
+    @staticmethod
+    def quick_sort(array, low =0, high = None):
+        if high is None:
+            high = len(array) - 1
 
+        if low < high:
+            pivot_index = SortingAlgorithms.partition(array, low, high)
+
+            SortingAlgorithms.quick_sort(array, low, pivot_index-1)
+            SortingAlgorithms.quick_sort(array, pivot_index+1, high)
+
+        return array
 
 def main():
     file_data = FileHandler("DATASORTING.INP", "r")
@@ -70,7 +99,7 @@ def main():
     arrays = file_data.read_data()
     print("Mảng trước khi sắp xếp:", arrays)  # Thử in ra các mảng đã đọc để kiểm tra
     
-    sorted_arrays = [SortingAlgorithms.bubble_sort(arr) for arr in arrays]
+    sorted_arrays = [SortingAlgorithms.quick_sort(arr) for arr in arrays]
 
     file_data = FileHandler("DATASORTING.OUT", "w")
     file_data.write_data(sorted_arrays)
