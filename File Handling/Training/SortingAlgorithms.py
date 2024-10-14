@@ -23,15 +23,19 @@ class SortingAlgorithms:
         n = len(array)
 
         for i in range(n-1):
+            print(f"Tại vòng lặp thứ i={i}")
             swapped = False
             for j in range(n-i-1):
+                print(f"vòng lặp thứ j={j} so sánh giá trị tại j={j} và j+1={j+1} là {array[j]}, {array[j+1]}")
                 if array[j] > array[j+1]:
+                    print(f"giá trị {array[j]}>{array[j+1]}: gán giá trị tại vị trí j{j}={array[j+1]}; j{j+1}={array[j]}\n")
                     array[j], array[j+1] = array[j+1], array[j]
 
                     swapped = True
-
+                
             if not swapped:
                 break
+        
 
         return array
     
@@ -99,7 +103,7 @@ def main():
     arrays = file_data.read_data()
     print("Mảng trước khi sắp xếp:", arrays)  # Thử in ra các mảng đã đọc để kiểm tra
     
-    sorted_arrays = [SortingAlgorithms.quick_sort(arr) for arr in arrays]
+    sorted_arrays = [SortingAlgorithms.bubble_sort(arr) for arr in arrays]
 
     file_data = FileHandler("DATASORTING.OUT", "w")
     file_data.write_data(sorted_arrays)

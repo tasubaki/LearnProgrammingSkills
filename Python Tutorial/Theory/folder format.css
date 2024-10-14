@@ -1,0 +1,39 @@
+project-root/
+│
+├── src/                     # Thư mục chứa mã nguồn chính (Python)
+│   ├── __init__.py
+│   ├── json_processor.py
+│   ├── data_handler.py
+│   └── utils.py
+│
+├── dbt/                     # Thư mục chứa dự án dbt
+│   ├── models/              # Các model của dbt (SQL files)
+│   │   ├── staging/         # Các model stage dữ liệu
+│   │   └── marts/           # Các bảng phục vụ cho báo cáo
+│   ├── seeds/               # Các dữ liệu mẫu hoặc dữ liệu tĩnh
+│   ├── macros/              # Định nghĩa các macro tùy chỉnh
+│   ├── snapshots/           # Snapshot của bảng tại từng thời điểm
+│   ├── dbt_project.yml      # Cấu hình của dự án dbt
+│   └── profiles.yml         # Cấu hình kết nối database cho dbt
+│
+├── airflow/                 # Thư mục chứa cài đặt cho Airflow
+│   ├── dags/                # Thư mục chứa các DAGs
+│   │   └── data_pipeline.py # DAG chính của dự án
+│   ├── docker-compose.yml   # Cấu hình để chạy Airflow bằng Docker Compose
+│   └── config/              # Các file cấu hình bổ sung cho Airflow
+│
+├── tests/                   # Thư mục chứa các unit test (Python)
+│   └── test_json_processor.py
+│
+├── data/                    # Thư mục chứa dữ liệu mẫu (nếu có)
+│   └── sample_data.json
+│
+├── notebooks/               # Thư mục chứa các notebook (nếu có)
+│   └── data_analysis.ipynb
+│
+├── scripts/                 # Thư mục chứa các script tự động
+│   └── main.py
+│
+├── requirements.txt         # Các dependencies (Python)
+├── README.md                # Mô tả dự án
+└── .gitignore               # File loại trừ khi push lên GitHub
